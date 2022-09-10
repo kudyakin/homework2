@@ -1,11 +1,9 @@
 package com.kudiukin.homework2;
 
-import com.kudiukin.homework2.service.LanguageHandler;
 import com.kudiukin.homework2.service.QuizService;
 import com.kudiukin.homework2.service.UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ResourceBundleMessageSource;
 
 @Configuration
 public class ApplicationQuizConfiguration {
