@@ -1,7 +1,9 @@
 package com.kudiukin.homework2;
 
 import com.kudiukin.homework2.service.QuizService;
+import com.kudiukin.homework2.service.QuizServiceImpl;
 import com.kudiukin.homework2.service.UserService;
+import com.kudiukin.homework2.service.UserServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,7 +14,7 @@ public class ApplicationQuizConfiguration {
 
     @Bean(name = "userService")
     public UserService userService() {
-        return new UserService();
+        return new UserServiceImpl();
     }
 
     @Bean(name = "languageHandler")
@@ -27,7 +29,7 @@ public class ApplicationQuizConfiguration {
 
     @Bean(name = "quizService")
     public QuizService quizService() {
-        return new QuizService();
+        return new QuizServiceImpl();
     }
 
     @Bean(name = "fileReader")
